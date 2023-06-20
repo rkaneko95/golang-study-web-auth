@@ -7,13 +7,11 @@ import (
 )
 
 func main() {
-	testHash()
-
-	/*setHandleFunc()
+	setHandleFunc()
 	err := http.ListenAndServe(":8080", nil)
 	if err != nil {
 		log.Panic(err)
-	}*/
+	}
 }
 
 func setHandleFunc() {
