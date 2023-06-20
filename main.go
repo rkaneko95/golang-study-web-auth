@@ -6,6 +6,28 @@ import (
 	"net/http"
 )
 
+/*
+● Hashing
+	○ MD5 - don’t use
+	○ SHA
+	○ Bcrypt
+	○ Scrypt
+● Signing
+	○ Symmetric Key
+		■ HMAC
+		■ same key to sign (encrypt) / verify (decrypt)
+	○ Asymmetric Key
+		■ RSA
+		■ ECDSA - better than RSA; faster; smaller keys
+		■ private key to sign (encrypt) / public key to verify (decrypt)
+	○ JWT
+● Encryption
+	○ Symmetric key
+		■ AES
+	○ Asymmetric Key
+		■ RSA
+*/
+
 func main() {
 	setHandleFunc()
 	err := http.ListenAndServe(":8080", nil)
